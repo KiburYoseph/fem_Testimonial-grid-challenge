@@ -4,8 +4,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     background-color: rgb(242, 250, 249);
 }
 
@@ -14,6 +14,7 @@ body {
     grid-template-columns: repeat(4, minmax(auto, 300px));
     grid-template-rows: repeat(2, minmax(auto, auto));
     gap: 26px;
+    border-radius: 10px;
 }
 
 .daniel {
@@ -22,8 +23,16 @@ body {
     background-color: hsl(263, 55%, 52%);
     border-radius: 10px;
     padding: 30px;
+    position: relative;
 }
 
+.quotation {
+    position: absolute;
+    right: 85px;
+    top: 0;
+    height: 120px;
+    z-index: ;
+}
 .jonathan {
     grid-column: 3 / 4;
     grid-row: 1 / 2;
@@ -40,31 +49,20 @@ body {
     padding: 30px;
 }
 
-.jeanette > .userinfo > .usertext > .name {
-    color: hsl(217, 19%, 35%);
-}
-
-.jeanette > .userinfo > .usertext > .verified {
-    color: hsla(217, 19%, 35%, 0.5);
-}
-
-.secondH {
-    color: hsl(217, 19%, 35%);
-    font-size: 22px;
-}
-
-.secondP {
-    color: hsla(217, 19%, 35%, 0.5);
-}
-
 .patrick {
     grid-column: 2 / 4;
     grid-row: 2 / 3;
+    background-color: hsl(219, 29%, 14%);
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .kira {
     grid-column: 4 / 5;
     grid-row: 1 / 3;
+    background-color: white;
+    border-radius: 10px;
+    padding: 30px;
 }
 
 .name {
@@ -73,9 +71,7 @@ body {
 .verified {
     color: hsl(0, 0%, 81%);
 }
-p {
-    color: hsl(0, 0%, 81%);
-}
+
 
 .userinfo {
     display: flex;
@@ -99,7 +95,29 @@ p {
     gap: 2px;
 }
 
+p {
+    color: hsl(0, 0%, 81%);
+}
+
 h1 {
     color: hsl(210, 46%, 95%);
+    font-size: 24px;
+    z-index: 1;
+}
+
+.secondH {
+    color: hsl(217, 19%, 35%);
     font-size: 22px;
+}
+
+.secondP {
+    color: hsla(217, 19%, 35%, 0.5);
+}
+
+.nametwo {
+    color: hsl(217, 19%, 35%);
+}
+
+.verifiedtwo {
+    color: hsla(217, 19%, 35%, 0.5);
 }

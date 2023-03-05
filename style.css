@@ -127,3 +127,34 @@ h1 {
 .verifiedtwo {
     color: hsla(217, 19%, 35%, 0.5);
 }
+
+@media (max-width: 700px){
+    body {
+        width: auto;
+        height: auto;
+    }
+    .grid-container{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(7, auto);
+    }
+    .daniel {
+        grid-column: 1/1;
+        grid-row: 1 / 2;
+    }
+    .jonathan {
+        grid-column: 1/1;
+        grid-row: 2 / 3;
+    }
+    .jeanette {
+        grid-column: 1/1;
+        grid-row: 3 / 4;
+    }
+    .patrick {
+        grid-row: 4 / 6;
+        grid-column: 1/1;
+    }
+    .kira {
+        grid-row: 6 / 8;
+        grid-column: 1/1;
+    }
+}
